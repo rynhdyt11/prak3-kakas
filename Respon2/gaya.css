@@ -1,0 +1,223 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    .navbar{
+        width: 100%;
+        background-color: #EE9322;
+        margin: auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        position: fixed;
+        z-index: 1;
+        font-family: 'Popppins', sans-serif;
+    }
+
+    .navbar img{
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+
+    .isi-nav{
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-left: -400px;
+    }   
+    .navbar ul li{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navbar ul li:hover{
+        text-decoration: underline; 
+        text-underline-offset: 6px;
+        text-decoration-thickness: 2px;
+        text-decoration-color: #4CAF50;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .navbar ul li a:hover{
+        color: #4CAF50;
+        transition: .5s;
+    }
+
+    /* Style the sidebar */
+    .sidebar {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #000;
+        overflow-x: hidden;
+        padding-top: 80px;
+        font-family: 'Popppins', sans-serif;
+    }
+    
+    /* Links inside the sidebar */
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        display: block;
+    }
+    
+    /* Change color on hover */
+    .sidebar a:hover {
+        background-color: #4CAF50;
+        color: white;
+        transition: .5s;
+    }
+        
+    .sidebar iframe{
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+    /* Style the content */
+    .content {
+        margin-left: 100px;
+        margin-right: 400px;
+        padding: 80px 16px;
+    }
+    
+    #header{
+        text-align: center;
+    }
+
+    .isi-konten, .content-class{
+        width: 1000px;
+    }
+
+    .isi-konten h2{
+        margin-top: 10px;
+    }
+
+    .isi-konten button{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 50px;
+        border-radius: 0 20px ;
+    }
+
+    .isi-konten .up-button{
+        border: 2px solid black;
+        width: 100px;
+        height: 30px;
+        border-radius: 0 20px;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .isi-konten .up-button:hover{
+        background-color: #98E4FF;
+    }
+
+
+    .tombol-class button{
+        margin: 40px 40px;
+        border-radius: 0 20px;
+        border-color: #EE9322;
+        width: 150px;
+        height: 80px;
+    }
+
+    .content-class{
+        margin-left: 100px;
+    }
+
+    .content-class .content1, .content2, .content3{
+        background-color: #F5F5DC;
+        margin-top: 20px;
+    }
+
+    .biodata{
+        margin-top: 20px;
+        margin-left: 350px;
+        background-color: #FFBB5C;
+        border: 2px solid #000;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .biodata h1{
+        text-align: center;
+    }
+
+    footer{
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer{
+        background-color: #EE9322;
+        width: 100%;
+        height: 100px;
+        color: white;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer p{
+        margin-left: 40%;
+    }
+
+    @media only screen and (max-width:480px) {
+        .navbar ul{
+            display: none;
+        }
+
+        .sidebar{
+            display: none;
+        }
+
+        .content{
+            margin: 0;
+        }
+
+        .content .isi-konten{
+            width: fit-content;
+        }
+
+        .content-class{
+            margin: 0 10px;
+            width: fit-content;
+        }
+
+        .biodata{
+            margin: 20px 10px;
+            width: fit-content;
+        }
+
+        .footer p{
+            margin: auto;
+        }
+    }
